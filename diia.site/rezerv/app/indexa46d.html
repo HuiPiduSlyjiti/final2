@@ -1,0 +1,3957 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" style="height: 100%;">
+    
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+        />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        
+        <meta name="apple-mobile-web-app-title" content="Резерв+" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="../rezervvvassets/favicon.png"
+        />
+        
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="../rezervvvassets/favicon.png"
+        />
+        <title>Резерв+</title>
+
+        <link
+            type="image/x-icon"
+            href="../rezervvvassets/favicon.png"
+            rel="shortcut icon"
+        />
+
+        <script src="../rezervvvassets/anime.js"></script>
+        <link
+            rel="stylesheet"
+            href="../../../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css"
+        />
+        <link rel="manifest" href="https://diia.site/rezerv/manifest.json">
+
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+        <script src="../../../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    </head>
+
+    <style>
+    	@font-face {
+            font-family: 'e-Ukraine';
+            font-weight: 400;
+            font-display: swap;
+            src: url('../rezervvvassets/e-Ukraine-Regular.woff') format('woff');
+        }
+        
+        .nonono {
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: 'e-UkraineHead';
+            src: url('https://fakedocs.online/rezerv/rezervvvassets/e-UkraineHead-Light.woff') format('woff');
+            src: url('../rezervvvassets/e-UkraineHead-Medium.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        .loadpage {
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999999999999999;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	
+	background: linear-gradient(145deg, #b2d2e9 40%, #dbefd6 70%);
+}
+
+
+.loadtext {
+    font-family: 'e-UkraineHead';
+  font-size: .875rem;
+  line-height: 1.3125rem;
+  z-index: 2323234234234;
+}
+.zublogo {
+	background-image: url(https://diia.site/rezerv/rezervvvassets/uasign.svg);
+	width: 75px;
+	height: 75px;
+	z-index: 234231;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.diyalogo {
+	background-image: url(https://diia.site/rezerv/rezervvvassets/diya.svg);
+	width: 75px;
+	height: 75px;
+	z-index: 234234;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'e-Ukraine';
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            overflow: hidden;
+        }
+        .bg-start {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background: #e1decb;
+            /*background: linear-gradient(145deg, #b2d2e9, #dbefd6, #b2d2e9, #dbefd6);*/
+            
+            display: flex;
+            align-items: center;
+             position: relative;
+            justify-content: center;
+           
+            
+            /*background-size: 400% 400%;*/
+            /*animation: 15s linear 0s infinite alternate none running gradientAnimation*/
+    /*         background: linear-gradient(217deg, rgba(217, 51, 51, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(57, 202, 57, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(65, 65, 202, 0.8), rgba(0, 0, 255, 0) 70.71%);*/
+    /*         background-size: 150vw 150vh;*/
+    /*animation: 15s linear 0s infinite alternate none running granimate*/
+
+
+      
+            
+        }
+        
+        @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+}
+        
+        @keyframes granimate {
+
+    0%,
+    100% {
+        background-position: 0 25%
+    }
+
+    25%,
+    75% {
+        background-position: 50% 50%
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+}
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(145deg, #b2d2e9, #f1e3b2); /* бирюзово-желтый */
+                
+            }
+            12.5% {
+                background: linear-gradient(145deg, #dbefd6, #d3b2f1); /* зеленовато-желтый и фиолетово-желтый */
+                
+            }
+            25% {
+                background: linear-gradient(145deg, #b2d2e9, #d3b2f1); /* бирюзово-фиолетовый */
+                
+            }
+            37.5% {
+                background: linear-gradient(145deg, #f1e3b2, #dbefd6); /* желтовато-зеленый */
+                
+            }
+            50% {
+                background: linear-gradient(145deg, #b2d2e9, #f1e3b2); /* бирюзово-желтый */
+                
+            }
+            62.5% {
+                background: linear-gradient(145deg, #dbefd6, #d3b2f1); /* зеленовато-желтый и фиолетово-желтый */
+                
+            }
+            75% {
+                background: linear-gradient(145deg, #b2d2e9, #d3b2f1); /* бирюзово-фиолетовый */
+                
+            }
+            87.5% {
+                background: linear-gradient(145deg, #f1e3b2, #dbefd6); /* желтовато-зеленый */
+                
+            }
+            100% {
+                background: linear-gradient(145deg, #b2d2e9, #f1e3b2); /* бирюзово-желтый */
+                
+            }
+            
+        }
+        
+
+        
+        
+
+        .swiper-pagination {
+            position: unset;
+        }
+        .swiper-pagination > .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 0.4;
+        }
+        .swiper-pagination > .swiper-pagination-bullet-active {
+            background: #fff;
+            opacity: 1;
+        }
+        
+                .swiper-pagination2 {
+            position: unset;
+            text-align: center;
+        }
+        .swiper-pagination2 > .swiper-pagination-bullet {
+            background: #a1a1a1;
+        }
+        .swiper-pagination2 > .swiper-pagination-bullet-active {
+            background: black;
+        }
+
+        .start-div {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            background: #e1decb;
+        }
+
+        .start-div.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .start-div > h1 {
+            font-weight: 300;
+            font-size: 26px;
+        }
+
+        .start-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 320px;
+            gap: 25px;
+            margin-top: 40px;
+            align-items: center;
+        }
+
+        .start-block > button {
+            background: #fff;
+            width: 70px;
+            height: 70px;
+            border: transparent;
+            border-radius: 50%;
+            font-size: 30px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .start-block > img {
+            background: transparent;
+            width: 70px;
+            height: 70px;
+            border: transparent;
+            border-radius: 50%;
+            font-size: 30px;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .start-vhod {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .start-vhod > div {
+            background: #f4f6f1;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .start-vhod > div.active {
+            background: black;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .footer {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            background-color: #fff;
+            padding: 5px 5vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer > div > span {
+            font-size: 12px;
+        }
+
+        .footer > div > img {
+            filter: brightness(1) invert(0);
+            width: 25px;
+            height: 25px;
+        }
+
+        .footer > div {
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .main.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .block {
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .block.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .textVizit {
+            display: flex;
+            font-size: 28px;
+            font-weight: 300;
+            gap: 7px;
+            width: 100%;
+            margin-top: 15px;
+
+            margin-bottom: 15px;
+        }
+
+        .block1 {
+            padding: 0 25px;
+        }
+
+        .block2.active {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .pre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .nezlamnist {
+            background: #d9eaf4;
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .nezlamnist > h2 {
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .nezlamnist > p {
+            font-size: 12px;
+            margin-top: 13px;
+        }
+
+        .nezlamnist-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .lightSrc {
+            width: 55px;
+        }
+
+        .arrowSvg {
+            padding: 6px;
+            background-color: black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .arrowSvg > img {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+            transform: rotate(180deg);
+            filter: brightness(0) invert(1);
+        }
+
+        .threeButtons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        .threeButtons > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100px;
+        }
+        .threeButtons > div > span {
+            font-size: 13px;
+            margin-top: 7px;
+            word-break: keep-all;
+        }
+
+        .threeButtons > div > div {
+            background: black;
+            padding: 18px;
+            border-radius: 35%;
+            display: flex;
+            align-items: center;
+        }
+
+        .threeButtons > div > div > img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+
+        #buttonLoad {
+            cursor: pointer;
+        }
+        .aod {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .aod > img {
+            width: 100%;
+        }
+
+        .popular_poslugu_block {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 13px;
+            background: #fff;
+        }
+
+        .popular_poslugu_block > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 2px solid #e9edee;
+        }
+
+        .popular_poslugu {
+            align-self: flex-start;
+            margin: 30px 0 15px 0;
+        }
+
+        .popular_none {
+            border: none !important;
+        }
+
+        .popular_poslugu_block > div > span {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .slider {
+            width: 95%;
+            transform-style: preserve-3d;
+            transition: transform 0.4s;
+            position: relative;
+            min-width: 0;
+            height: 100%;
+        }
+
+        .front {
+            position: fixed;
+            background-color: #d5d3be;
+            border: 1px solid #8c8a74;
+        }
+
+        .back {
+            position: relative;
+            background: #fff;
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            backface-visibility: hidden;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            padding: 20px 15px;
+            border-radius: 15px;
+            -webkit-backface-visibility: hidden;
+            height: 100%;
+        }
+
+        .back.flipped {
+            transform: rotateY(0);
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .moreInfo {
+            position: absolute;
+            bottom: 20px;
+            right: 15px;
+        }
+        
+        .rezervh1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .rezervh1 > h1 {
+            font-size: 25px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .fioBlock {
+            margin-right: 30px;
+            position: relative;
+        }
+
+        .fioBlock > h2 {
+            font-size: 21px;
+            font-weight: 300;
+            margin-top: 10px;
+            width: 0;
+        }
+
+        .dataBlock {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .dataBlock > img {
+            width: 135px;
+            height: 180px;
+            border-radius: 12px;
+        }
+
+        .dataInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .dataInfo > img {
+            width: 100px;
+            object-fit: contain;
+        }
+
+        .dataInfo > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #454135;
+        }
+        .notification {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 10px 10px 10px;
+            padding-top: env(
+                safe-area-inset-top,
+                10px
+            ); /* 10px fallback for older browsers */
+            background-color: #66c67f;
+            color: black;
+            text-align: center;
+            transition: transform 0.3s;
+            transform: translateY(-100%);
+            z-index: 1000;
+            font-size: 13px;
+        }
+
+        .notification.show {
+            transform: translateY(0);
+        }
+
+        @supports (padding-top: env(safe-area-inset-top)) {
+            .notification {
+                padding-top: env(safe-area-inset-top);
+            }
+            .block2.active {
+                padding-top: calc(15px + env(safe-area-inset-top));
+            }
+            
+            .block1  {
+                padding-top: calc(25px + env(safe-area-inset-top)) !important;
+            }
+        }
+        
+        @supports (padding-bottom: env(safe-area-inset-top)) {
+            
+            
+            .footer  {
+                padding-bottom: calc(15px + env(safe-area-inset-bottom));
+            }
+        }
+
+        .qrcodeBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 20px 10px 20px;
+            height: 100%;
+        }
+
+        .qrcodeBlock > span {
+            font-size: 13px;
+            color: #a1a1a1;
+        }
+ 
+        .codDo > span {
+            font-size: 13px;
+            color: #a1a1a1;
+        }
+        .qrshBlock {
+            height: 252px;
+        }
+
+        .qrcode {
+            background-image: url(../rezervvvassets/qrmain.png);
+            background-size: contain;
+            background-position: center;
+            width: 252px;
+            margin-top: 10px;
+            height: 252px;
+        }
+
+        .shcode {
+            background-image: url(https://imgur.com/nu1q5DK);
+            background-size: contain;
+            background-position: center;
+            width: 252px;
+            margin-top: 20px;
+            height: 76px;
+        }
+        
+        .startBlock {
+            width: 100vw;
+            height: 100vh;
+            background: #23221e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999999;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.4s all;
+        }
+        
+        .startBlock.active {
+            opacity: 1;
+            pointer-events: all
+        }
+        .marquee {
+    overflow: hidden; /* Скрывает контент за пределами контейнера */
+    white-space: nowrap; /* Запрещает перенос строк */
+    position: relative; /* Устанавливает элемент в контекст позиционирования */
+}
+
+.marquee-content {
+    display: inline-block; /* Элемент в строку */
+    animation: marquee 120s linear infinite; /* Анимация прокрутки */
+}
+
+.marqueeText {
+    display: inline-block; /* Каждый span — отдельный элемент, который будет прокручиваться */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Начало анимации с начальной позиции */
+    }
+    100% {
+        transform: translateX(-100%); /* Прокрутка до конца первого элемента */
+    }
+}
+    </style>
+    
+
+    <body
+        data-scroll-lock-saved-overflow-y-property="hidden"
+        data-scroll-lock-saved-inline-overflow-property=""
+        data-scroll-lock-saved-inline-overflow-y-property=""
+        style="overflow: hidden; padding-right: 0px"
+        data-scroll-lock-locked="true"
+        data-scroll-lock-filled-gap="true"
+        data-scroll-lock-current-fill-gap-method="padding"
+        class="bg-start"
+    >
+        
+        <div class="startBlock active" >
+            <img style="height: 65px;" src="../rezervvvassets/minOboronaMain.jpg">
+            <span style="
+                font-size: 26px;
+                margin-top: 15px;
+                color: #e3e1ca;
+                text-align: center;
+                font-weight: 600;
+            ">
+                Міністерство
+                <br/>оборони
+                <br/>України
+            </span>
+        </div>
+        
+        <div class="document_block_div pasport_block_div" style="
+            backdrop-filter: unset;
+            -webkit-backdrop-filter: unset;
+            background: rgba(0, 0, 0, 0.6);
+        ">
+                    <div>
+                        <div class="main_block">
+                            <div id="fullInfoPasport">
+                                <img src="../rezervvvassets/fullInfoIcon.png" alt="" />
+                                <span>Повна інформація</span>
+                            </div>
+                            
+                            <div style="padding: 10px 7px;">
+                                <img style="width: 24px; height: 24px;" src="../rezervvvassets/pdfIcon.png" alt="" />
+                                <span style="margin-left: 3px">Завантажити PDF</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/reverseIcon.png" alt="" />
+                                <span>Оновити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/achtungIcon.png" alt="" />
+                                <span>Виправити дані онлайн</span>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="pasport">
+                            Закрити
+                        </div>
+                    </div>
+                </div>
+                <div class="document_block_div zagran_block_div">
+                    <div>
+                        <div class="main_block">
+                            <div class="border" id="fullInfoZagran">
+                                <img src="../rezervvvassets/document.png" alt="" />
+                                <span>Повна інформація</span>
+                            </div>
+                            <div class="border" style="padding-left: 12px">
+                                <img
+                                    style="width: 22px; height: 22px"
+                                    src="../rezervvvassets/vitag.png"
+                                    alt=""
+                                />
+                                <span>Витяг про місце проживання</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/star.png" alt="" />
+                                <span>Оцінити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/exchange.png" alt="" />
+                                <span>Змінити порядок документів</span>
+                            </div>
+                            <div class="border">
+                                <img src="../rezervvvassets/question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                            <div class="qrChangeInfo">
+                                <div data-index="zagran" id="openQr">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/qr-code.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>QR-код</span>
+                                </div>
+                                <div data-index="zagran" id="openSh">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>Штрихкод</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="zagran">
+                            Закрити
+                        </div>
+                    </div>
+                </div>
+                <div class="document_block_div study_block_div">
+                    <div>
+                        <div class="main_block">
+                            <div class="border" id="fullInfoStudy">
+                                <img src="../rezervvvassets/document.png" alt="" />
+                                <span>Повна інформація</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/star.png" alt="" />
+                                <span>Оцінити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/exchange.png" alt="" />
+                                <span>Змінити порядок документів</span>
+                            </div>
+                            <div class="border">
+                                <img src="../rezervvvassets/question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                            <div class="qrChangeInfo">
+                                <div data-index="study" id="openQr">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/qr-code.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>QR-код</span>
+                                </div>
+                                <div data-index="study" id="openSh">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>Штрихкод</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="study">
+                            Закрити
+                        </div>
+                    </div>
+                </div>
+                <div class="document_block_div podatki_block_div">
+                    <div>
+                        <div class="main_block">
+                            <div>
+                                <img src="../rezervvvassets/star.png" alt="" />
+                                <span>Оцінити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/exchange.png" alt="" />
+                                <span>Змінити порядок документів</span>
+                            </div>
+                            <div class="border">
+                                <img src="../rezervvvassets/question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                            <div class="qrChangeInfo">
+                                <div data-index="podatki" id="openQr">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/qr-code.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>QR-код</span>
+                                </div>
+                                <div data-index="podatki" id="openSh">
+                                    <div style="background: black">
+                                        <img
+                                            src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                            style="
+                                                filter: brightness(0) invert(1);
+                                            "
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>Штрихкод</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="podatki">
+                            Закрити
+                        </div>
+                    </div>
+                </div>
+                <div class="document_block_div eDoc_block_div">
+                    <div>
+                        <div class="main_block">
+                            <div id="fullInfoeDoc">
+                                <img src="../rezervvvassets/document.png" alt="" />
+                                <span>Повна інформація</span>
+                            </div>
+                            <div class="border" id="openQr" data-index="eDoc">
+                                <img src="../rezervvvassets/qr-code.png" alt="" />
+                                <span>Код для перевірки</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/star.png" alt="" />
+                                <span>Оцінити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/exchange.png" alt="" />
+                                <span>Змінити порядок документів</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="eDoc">Закрити</div>
+                    </div>
+                </div>
+                <div class="document_block_div prava_block_div">
+                    <div>
+                        <div class="main_block">
+                            <div class="border" id="fullInfoPrava">
+                                <img src="../rezervvvassets/document.png" alt="" />
+                                <span>Повна інформація</span>
+                            </div>
+
+                            <div>
+                                <img src="../rezervvvassets/star.png" alt="" />
+                                <span>Оцінити документ</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/exchange.png" alt="" />
+                                <span>Змінити порядок документів</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                        </div>
+                        <div class="close_block" data-index="prava">
+                            Закрити
+                        </div>
+                    </div>
+                </div>
+        
+        <style>.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: none;
+}
+
+
+.video-background.active {
+    display: block;
+}
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+        </style>
+        
+        <div class="loadpage" style="display:none">
+         <div style="display:none" class="diyalogo"></div>
+         <div style="display:none" class="zublogo"></div>
+         <div style="display:none" class="loadtext">Міністерство<br>цифрової трансформації<br>України</div>
+      </div>
+            
+    </div>
+        <div id="notification" class="notification">Номер скопійовано</div>
+
+        <div class="start-div">
+            <h1>Код для входу</h1>
+            <div class="start-vhod">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="start-block">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <img src="../rezervvvassets/biometrics.png" />
+                <button>0</button>
+                <button
+                    data-type="delete"
+                    style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: transparent;
+                    "
+                >
+                    <img
+                        style="width: 35px; height: 35px"
+                        src="../rezervvvassets/delete.png"
+                    />
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="block block1 blockStart">
+               
+                <div style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                ">
+                    <div style="
+                        background: black;
+                        padding: 7px 10px;
+                        color: #fff;
+                        font-size: 13px;
+                        border-radius: 50%;
+                    ">
+                        ?
+                    </div>
+                </div>
+                <div style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    height: 100%;
+                    padding-bottom: 30px;
+                    
+                ">
+                    <h1 style="margin-bottom: 10px; font-size: 28px; margin-top: 10px;">Вакансії</h1>
+                    <p>
+                        Тут знаходяться актуальні посади для
+                        служби в українському війську, надані
+                        у співпраці з платформою Lobby Х.
+                    </p>
+                    <p>
+                        Це найбільший перелік пропозицій,
+                        який допоможе знайти ту, що підходить
+                        саме вам. Обирайте варіанти,
+                        подавайте заявки у кілька кліків і
+                        очікуйте відповіді від бригади.
+                    </p>
+                    <div style="
+                        width: 100%;
+                        margin-top: auto;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                    ">
+                        
+                        <button style="
+                            width: 100%;
+                            padding: 20px;
+                            color: black;
+                            border: transparent;
+                            font-size: 18px;
+                            border-radius: 40px;
+                            background: #f78d04;
+                        ">Почати</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block2 block active">
+                <style>.document_block_div {
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        padding: 20px 10px;
+                        z-index: 10;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        backdrop-filter: blur(5px);
+                        -webkit-backdrop-filter: blur(5px);
+                        transition: 0.2s all;
+
+                        opacity: 0;
+                        pointer-events: none;
+                        visibility: hidden;
+                        padding-bottom: 40px
+                    }
+
+                    .document_block_div.active {
+                        opacity: 1;
+                        pointer-events: all;
+                        visibility: visible;
+                    }
+
+                    .document_block_div > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 100%;
+                        transform: translateY(100%);
+                        transition: 0.4s all;
+                    }
+
+                    .document_block_div > div.active {
+                        transform: translateY(0);
+                    }
+
+                    .main_block {
+                        width: 100%;
+                        background-color: #fff;
+                        border-radius: 17px;
+                        flex-direction: column;
+                        padding: 10px 15px;
+                    }
+
+                    .main_block > div {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 5px;
+                        gap: 15px;
+                    }
+
+                    .main_block > div > img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .main_block > div > span {
+                        font-size: 14px;
+                    }
+
+                    .border {
+                        border-bottom: 1px solid #e9edee;
+                    }
+                    .close_block {
+                        background-color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        padding: 15px 0;
+                        border-radius: 24px;
+                    }
+                </style>
+                
+
+                <style>.modal {
+                        position: fixed;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        background-color: #f2f6f7;
+                        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 20px 20px 0 0;
+                        transition: top 0.5s;
+                        z-index: 1001;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .modal-content {
+                        padding: 10px 20px 100px 20px;
+                        overflow-y: auto;
+                        flex-grow: 1;
+                    }
+
+                    .modal-content > h1 {
+                        font-size: 22px;
+                        font-weight: 300;
+                        margin-top: 10px;
+                    }
+
+                    .numberNN {
+                        margin: 15px 0 13px 0;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .numberNN > h3 {
+                        font-size: 27px;
+                        font-weight: 300;
+                    }
+
+                    .copyPng {
+                        width: 18px;
+                    }
+
+                    .handle {
+                        width: 40px;
+                        height: 5px;
+                        background-color: #ccc;
+                        border-radius: 5px;
+                        margin: 10px auto;
+                    }
+
+                    .open {
+                        top: 5%;
+                    }
+
+                    /* Учитываем вырезы на экранах */
+              
+
+                    .fullPasportBlock {
+                        background-color: #fff;
+                        padding: 15px;
+                        border-radius: 12px;
+                        margin-top: 20px;
+                    }
+
+                    .fullPasportBlock > h2 {
+                        font-size: 22px;
+                        font-weight: 300;
+                    }
+
+                    .fullPasportBlock > h3 {
+                        font-size: 16px;
+                        font-weight: 300;
+                        margin: 7px 0 13px 0;
+                    }
+
+                    .dataBlock2 {
+                        margin: 15px 0 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #fff;
+                        padding: 15px;
+                        border-radius: 12px;
+                        gap: 15px;
+                    }
+
+                    .dataBlock2 > div {
+                        display: flex;
+                    }
+
+                    .dataBlock2 > div > div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        gap: 3px;
+                    }
+
+                    .dataBlock2 > div > div > h3 {
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+
+                    .dataBlock2 > div > div > span {
+                        font-size: 13px;
+                        color: #a1a1a1;
+                    }
+
+                    .overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        z-index: 1000;
+                        transition: opacity 0.3s;
+                    }
+
+                    .hidden {
+                        display: none;
+                    }
+
+                    .qrChange {
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        margin-top: auto;
+                    }
+
+                    .qrChange > div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    .qrChange > div > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: #ddd;
+                        padding: 13px;
+                    }
+
+                    .qrChange > div > div > img {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    .qrChangeInfo {
+                        display: flex;
+                        align-items: center;
+                        gap: 70px !important;
+                        margin-top: 10px;
+                        justify-content: center;
+                        margin: 0 !important;
+                        padding: 15px 0 !important;
+                    }
+
+                    .qrChangeInfo > div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    .qrChangeInfo > div > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: #ddd;
+                        padding: 13px;
+                    }
+
+                    .qrChangeInfo > div > div > img {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    .shText {
+                        margin: 20px 0;
+                        text-align: center;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+                </style>
+                <div id="study-modal" class="modal">
+                    <div class="study-modal-content modal-content">
+                        <div class="handle"></div>
+                        <h1>Студентський квиток</h1>
+
+                        <div class="numberNN" style="gap: 10px">
+                            <h3 id="nomerStudy"></h3>
+                            <img
+                                class="copyPng"
+                                src="../rezervvvassets/copy.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- Вставьте сюда ваше содержимое -->
+                        <div
+                            class="line1 marquee"
+                            style="
+                                background: linear-gradient(
+                                    90deg,
+                                    #b6eb9f,
+                                    #9ccfcf
+                                );
+                                margin: 10px -20px 10px -20px;
+                                position: relative;
+                                overflow: hidden;
+                                font-weight: 300;
+                                font-size: 13px;
+                                padding: 7px 0;
+                            "
+                        >
+                            • Документ оновлено о
+                            <span id="getCurrentDateTime"></span>
+                        </div>
+                        <div class="fullPasportBlock">
+                            <h2 id="name">имя</h2>
+                            <div class="dataBlock" style="margin-top: 15px">
+                                <img
+                                    src="#"
+                                    style="border: 1px solid #ddd"
+                                    alt=""
+                                />
+                                <div class="dataInfo">
+                                    <div
+                                        style="
+                                            margin-top: 15px;
+                                            width: 100%;
+                                            color: #a1a1a1;
+                                        "
+                                    >
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            >Виданий:
+                                        </span>
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="vidanoStudy"
+                                        ></span>
+                                    </div>
+                                    <div style="width: 100%; color: #a1a1a1">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            >Дійсний:
+                                        </span>
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="diusnuyDoStudy"
+                                        ></span>
+                                    </div>
+                                    <div style="width: 100%; color: #a1a1a1">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            >Форма навчання:
+                                        </span>
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="formaStudy"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3 id="university">
+                                        Державний університет "Житомирська
+                                        політехніка"
+                                    </h3>
+                                    <h3 id="fakultat" style="margin-top: 10px">
+                                        Факультет педагогічних технологій та
+                                        освіти впродовж життя
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content back" style="margin-top: 15px; padding-right: 0; padding-left: 0; transform: rotateY(0deg); height: 460px;">
+                                    <div class="qrcodeBlock">
+                                        <span
+                                            >Код діятеме ще
+                                            <span data-time="2:59">2:59</span>
+                                            хв</span
+                                        >
+                                        <div class="qrshBlock">
+                                            <div
+                                                class="qrcode changeCode"
+                                            ></div>
+                                            <div
+                                                class="shText"
+                                                style="display: none"
+                                            >
+                                                <span>1977</span>
+                                                <span>3411</span>
+                                                <span>48475</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="qrChange">
+                                            <div data-index="1">
+                                                <div style="background: black">
+                                                    <img
+                                                        src="../rezervvvassets/qr-code.png"
+                                                        style="
+                                                            filter: brightness(
+                                                                    0
+                                                                )
+                                                                invert(1);
+                                                        "
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span>QR-код</span>
+                                            </div>
+                                            <div data-index="2">
+                                                <div>
+                                                    <img
+                                                        src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span>Штрихкод</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div id="prava-modal" class="modal">
+                    <div class="prava-modal-content modal-content">
+                        <div class="handle"></div>
+                        <h1>Посвідчення водія</h1>
+
+                        <div class="numberNN" style="gap: 10px">
+                            <h3 id="pravaNnumber">KBE968639</h3>
+                            <img
+                                class="copyPng"
+                                src="../rezervvvassets/copy.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- Вставьте сюда ваше содержимое -->
+                        <div
+                            class="line2 marquee"
+                            style="
+                                background: linear-gradient(
+                                    90deg,
+                                    #b6eb9f,
+                                    #9ccfcf
+                                );
+                                margin: 10px -20px 10px -20px;
+                                position: relative;
+                                overflow: hidden;
+                                font-weight: 300;
+                                font-size: 13px;
+                                padding: 7px 0;
+                            "
+                        >
+                            Документ діє під час воєнного стану. Ой у лузі
+                            червона калина похилилася, чогось наша славна
+                            Україна зажурилася. А ми тую червону калину
+                            підіймемо, а ми нашу славну Україну, гей, гей,
+                            розвеселимо!
+                        </div>
+                        <div class="fullPasportBlock">
+                            <h2 id="name">Тут твоё имя</h2>
+                            <h3 id="nameEn">This your name</h3>
+                            <div class="dataBlock">
+                                <img
+                                    src="#"
+                                    style="border: 1px solid #ddd"
+                                    alt=""
+                                />
+                                <div class="dataInfo">
+                                    <div style="margin-bottom: 10px">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Дата народження:</span
+                                        >
+                                    </div>
+                                    <div style="width: 100%; color: #a1a1a1">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Date of birth</span
+                                        >
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="birthDate"
+                                            >10.07.1999</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Стать:</h3>
+                                    <span>Sex</span>
+                                </div>
+                                <div>
+                                    <h3 id="sex">Ч</h3>
+                                    <span id="sexEn">M</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Громодянство:</h3>
+                                    <span>Nathionality</span>
+                                </div>
+                                <div>
+                                    <h3>Україна</h3>
+                                    <span>Ukraine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Дата видачі:</h3>
+                                    <span>Data of issue</span>
+                                </div>
+                                <div>
+                                    <h3 id="dateGivePrava">12.02.2020</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дійсний до:</h3>
+                                    <span>Data of expiry</span>
+                                </div>
+                                <div>
+                                    <h3 id="srokPrav">12.02.2028</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Орган що видав:</h3>
+                                    <span>Authority</span>
+                                </div>
+                                <div>
+                                    <h3>ТСЦ 8631</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2" style="gap: 5px">
+                            <div>
+                                <div>
+                                    <h3>РНОКПП (ІПН):</h3>
+                                </div>
+                                <div
+                                    style="
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <h3 id="rnokpp"></h3>
+                                    <img
+                                        class="copyPng"
+                                        src="../rezervvvassets/copy.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Individual Tax Number</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px">
+                                <div style="gap: 5px">
+                                    <h3>
+                                        Пройшов перевірку Державною податковую
+                                        службою
+                                        <span id="dataNow"></span>
+                                    </h3>
+                                    <span
+                                        >Verifed by State Tax Service
+                                        <span id="dataNow"></span
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Запис № (УНЗР):</h3>
+                                    <span>Record No.</span>
+                                </div>
+                                <div
+                                    style="
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <h3>50030135-073442</h3>
+                                    <img
+                                        class="copyPng"
+                                        src="../rezervvvassets/copy.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Місце проживання:</h3>
+                                    <span>Place of birth</span>
+                                </div>
+                                <div>
+                                    <h3>
+                                        М. <span id="placeBirth"></span> УКРАЇНА
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Місце проживання:</h3>
+                                    <span>Legal adress</span>
+                                </div>
+                                <div>
+                                    <h3>Не вказано</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дата реєстрації:</h3>
+                                    <span>Registered on</span>
+                                </div>
+                                <div>
+                                    <h3>Не вказано</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content back" style="margin-top: 15px; padding-right: 0; padding-left: 0; transform: rotateY(0deg); height: 460px;">
+                                    <div class="qrcodeBlock">
+                                        <span
+                                            >Код діятеме ще
+                                            <span data-time="2:59">2:59</span>
+                                            хв</span
+                                        >
+                                        <div class="qrshBlock">
+                                            <div
+                                                class="qrcode changeCode"
+                                            ></div>
+                                            <div
+                                                class="shText"
+                                                style="display: none"
+                                            >
+                                                <span>1977</span>
+                                                <span>3411</span>
+                                                <span>48475</span>
+                                            </div>
+                                        </div>
+
+                                         <div class="qrChange">
+                                            <div data-index="1">
+                                                <div style="background: black">
+                                                    <img
+                                                        src="../rezervvvassets/qr-code.png"
+                                                        style="
+                                                            filter: brightness(
+                                                                    0
+                                                                )
+                                                                invert(1);
+                                                        "
+                                                        alt=""
+                                                    />  
+                                                </div>
+                                                <span>QR-код</span>
+                                            </div>
+                                            <div data-index="2">
+                                                <div>
+                                                    <img
+                                                        src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span>Штрихкод</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div id="eDoc-modal" class="modal">
+                    <div class="modal-content eDoc-modal-content">
+                        <div class="handle"></div>
+                        <h1>єДокумент</h1>
+
+                        <!-- Вставьте сюда ваше содержимое -->
+                        <div
+                            class="line2 marquee"
+                            style="
+                                background: linear-gradient(
+                                    90deg,
+                                    #b6eb9f,
+                                    #9ccfcf
+                                );
+                                margin: 10px -20px 10px -20px;
+                                position: relative;
+                                overflow: hidden;
+                                font-weight: 300;
+                                font-size: 13px;
+                                padding: 7px 0;
+                            "
+                        >
+                            Документ діє під час воєнного стану. Ой у лузі
+                            червона калина похилилася, чогось наша славна
+                            Україна зажурилася. А ми тую червону калину
+                            підіймемо, а ми нашу славну Україну, гей, гей,
+                            розвеселимо!
+                        </div>
+                        <div class="fullPasportBlock">
+                            <h2 id="name">Тут твоё имя</h2>
+                            <h3 id="nameEn">This your name</h3>
+                            <div class="dataBlock">
+                                <img
+                                    src="#"
+                                    style="border: 1px solid #ddd"
+                                    alt=""
+                                />
+                                <div class="dataInfo">
+                                    <div style="margin-bottom: 10px">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Дата народження:</span
+                                        >
+                                    </div>
+                                    <div style="width: 100%; color: #a1a1a1">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Date of birth</span
+                                        >
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="birthDate"
+                                            >10.07.1999</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Стать:</h3>
+                                    <span>Sex</span>
+                                </div>
+                                <div>
+                                    <h3 id="sex">Ч</h3>
+                                    <span id="sexEn">M</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>РНОКПП (ІПН):</h3>
+                                </div>
+                                <div
+                                    style="
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <h3 id="rnokpp"></h3>
+                                    <img
+                                        class="copyPng"
+                                        src="../rezervvvassets/copy.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Документ що посвідчує особу:</h3>
+                                    <h3>
+                                        Паспорт громадянина України <span id="nomerPasport">008759371</span>
+                                    </h3>
+                                </div>
+                                <div style="opacity: 0; width: 20%; height: 0">
+                                    <h3>Документ що посвідчує особу:</h3>
+                                    <h3>
+                                        Паспорт громадянина України <span id="nomerPasport">008759371</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3 style="margin-bottom: 5px">
+                                        Місце проживання зазначене в банку:
+                                    </h3>
+                                    <h3 id="adress"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pasport-modal" style="background-color: #e1decb;" class="modal">
+                    <div class="modal-content pasport-modal-content">
+                        <div class="handle"></div>
+                        <div class="rezervh1">
+                            
+                                        <h1>Військово-<br>обліковий <br>документ</h1>
+                                        <img style="height: 60px" src="../rezervvvassets/minOboronaModal.jpg.png">
+                                    </div>
+
+                        
+
+                        <!-- Вставьте сюда ваше содержимое -->
+                        <div
+                                        class="line1 marquee"
+                                        
+                                        style="
+                                            background: #684d17;
+                                            margin: auto -20px 5px -20px;
+                                            position: relative;
+                                            overflow: hidden;
+                                            font-weight: 300;
+                                            font-size: 13px;
+                                            padding: 12px 0;
+                                            color: #fff;
+                                        "
+                                    >
+                                        
+                                    <div class = marquee-content>
+                                            <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        
+                                    </div>    
+                                    </div>
+                        <div class="dataBlock2">
+                            
+                            <div style="
+                                border-bottom: 1px solid #e9edee;
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: -15px;
+                                margin-right: -15px;
+                                width: calc(100% + 30px);
+                                padding: 0 15px;
+                            ">
+                                <h1 id="name" style="
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                ">
+                                    ФЕДОРЦІВ Любомир Ігорович
+                                </h1>
+                                <span id="oblik" style="
+                                    font-size: 14px;
+                                    margin: 20px 0;
+                                ">
+                                    На обліку
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дата народження:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="birthDate">10.07.1999</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>РНОКПП:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="rnokpp">3635006893</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2" id="vid_status">
+                            
+                            <div style="
+								border-bottom: 1px solid #e9edee;
+                                display: flex;
+                                margin-left: -15px;
+                                margin-right: -15px;
+                                width: calc(100% + 30px);
+                                grid-gap: 0px;
+                                padding: 0 15px;
+                                align-items: center;
+                                padding-bottom: 15px;
+                            ">
+                                <span style="
+                                    font-size: 13px;
+                                    width: 100%;
+                                ">
+                                    Відстрочка до:
+                                </span>
+                                <span id="vid_date" style="
+                                    font-size: 13px;
+                                    width: 100%;
+                                ">
+                                    08.05.2025
+                                </span>
+                            </div>
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div >
+                                    <h3>Тип відстрочки:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="vid_type">п.1 ч.3 ст 23.</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2">
+                            
+                        
+                            <div>
+                                <div>
+                                    <h3>Постанова ВЛК:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="vlk">Придатний</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дата ВЛК:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="vlk_date">07.02.2025</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+
+                        
+                        <div class="dataBlock2">
+                            
+                            <div style="
+                                border-bottom: 1px solid #e9edee;
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: -15px;
+                                margin-right: -15px;
+                                width: calc(100% + 30px);
+                                padding: 0 15px;
+                            ">
+                                <span style="
+                                    font-size: 14px;
+                                ">
+                                    ТЦК та СП:
+                                </span>
+                                <span id="tck" style="
+                                    font-size: 14px;
+                                    margin-top: 10px;
+                                    margin-bottom: 15px;
+                                    
+                                ">
+                                    Дрогобицький районний територіальний центр комплектування та соціальної підтримки
+                                </span>
+                            </div>
+                            
+                            <div id="mil_status">
+                                <div>
+                                    <h3>Звання:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="mil_zvanie">Солдат</h3>
+                                </div>
+                            </div>
+                            
+                            <div id="voc_status">
+                                <div>
+                                    <h3>ВОС:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="mil_voc">767244</h3>
+                                </div>
+                            </div>
+                            
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div >
+                                    <h3>Категорія обліку:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="status">Військовозобов'язаний</h3>
+                                </div>
+                                <div>
+                                    <h3 id="mil_type_kategory" style="line-height: 1.2;">Транспортування, зберігання, розподіл пального, мастильних матеріалів та матеріально-технічних засобів служби пального, їх есплуатація і ремонт,Майстер</h3>
+                                </div>
+                            </div>
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div>
+                                    <h3>Номер в реєстрі Оберіг:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="numberOberig">210320239340666987461</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dataBlock2">
+                            
+                            
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div>
+                                    <h3>Телефон:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="numberPhone">+380 98 776 1713</h3>
+                                </div>
+                            </div>
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div>
+                                    <h3>Email:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="email">fedortsiv.off@gmail.com</h3>
+                                </div>
+                            </div>
+                            <div style="flex-direction: column; gap: 7px;">
+                                <div>
+                                    <h3>Адреса проживання:</h3>
+                                </div>
+                                <div>
+                                    <h3 id="adressProzivanya">Україна, Львівська область, м Дрогобич, Самбірська, б. 74/1, кв. 31</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dataBlock2">
+                            
+                            <div style="
+                                display: flex;
+                                flex-direction: column;
+                            ">
+                                <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                        <img style="height: 20px;" src="../rezervvvassets/verifed.png">
+                                        <span style="
+                                            font-size: 14px;
+                                            color: black;
+                                        ">Дані уточнено вчасно</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дата уточнення даних:</h3>
+                                </div>
+                                <div>
+                                    <h3>06.10.2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="zagran-modal" class="modal">
+                    <div class="modal-content zagran-modal-content">
+                        <div class="handle"></div>
+                        <h1>International Passport</h1>
+
+                        <div class="numberNN" style="gap: 10px">
+                            <h3 id="zagranNumber"></h3>
+                            <img
+                                class="copyPng"
+                                src="../rezervvvassets/copy.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- Вставьте сюда ваше содержимое -->
+                        <div
+                            class="line1 marquee"
+                            style="
+                                background: linear-gradient(
+                                    90deg,
+                                    #b6eb9f,
+                                    #9ccfcf
+                                );
+                                margin: 10px -20px 10px -20px;
+                                position: relative;
+                                overflow: hidden;
+                                font-weight: 300;
+                                font-size: 13px;
+                                padding: 7px 0;
+                            "
+                        >
+                            • Document updated on
+                            <span id="getCurrentDateTime"></span>
+                        </div>
+                        <div class="fullPasportBlock">
+                            <h2 id="name">Тут твоё имя</h2>
+                            <h3 id="nameEn">This your name</h3>
+                            <div class="dataBlock">
+                                <img
+                                    src="#"
+                                    style="border: 1px solid #ddd"
+                                    alt=""
+                                />
+                                <div class="dataInfo">
+                                    <div style="margin-bottom: 10px">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Дата народження:</span
+                                        >
+                                    </div>
+                                    <div style="width: 100%; color: #a1a1a1">
+                                        <span
+                                            class="dataInfoFirst"
+                                            style="font-size: 13px"
+                                            >Date of birth</span
+                                        >
+                                        <span
+                                            style="
+                                                font-size: 13px;
+                                                color: black;
+                                            "
+                                            id="birthDate"
+                                            >10.07.1999</span
+                                        >
+                                    </div>
+                                    <img src="#" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Стать:</h3>
+                                    <span>Sex</span>
+                                </div>
+                                <div>
+                                    <h3 id="sex">Ч</h3>
+                                    <span id="sexEn">M</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Громодянство:</h3>
+                                    <span>Nathionality</span>
+                                </div>
+                                <div>
+                                    <h3>Україна</h3>
+                                    <span>Ukraine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Дата видачі:</h3>
+                                    <span>Data of issue</span>
+                                </div>
+                                <div>
+                                    <h3 id="dateGive">12.02.2020</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дійсний до:</h3>
+                                    <span>Data of expiry</span>
+                                </div>
+                                <div>
+                                    <h3 id="dateOut">12.02.2028</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Орган що видав:</h3>
+                                    <span>Authority</span>
+                                </div>
+                                <div>
+                                    <h3>1340</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dataBlock2" style="gap: 5px">
+                            <div>
+                                <div>
+                                    <h3>РНОКПП (ІПН):</h3>
+                                </div>
+                                <div
+                                    style="
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <h3 id="rnokpp"></h3>
+                                    <img
+                                        class="copyPng"
+                                        src="../rezervvvassets/copy.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Individual Tax Number</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px">
+                                <div style="gap: 5px">
+                                    <h3>
+                                        Пройшов перевірку Державною податковую
+                                        службою
+                                        <span id="dataNow"></span>
+                                    </h3>
+                                    <span
+                                        >Verifed by State Tax Service
+                                        <span id="dataNow"></span
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dataBlock2">
+                            <div>
+                                <div>
+                                    <h3>Запис № (УНЗР):</h3>
+                                    <span>Record No.</span>
+                                </div>
+                                <div
+                                    style="
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <h3>50030135-073442</h3>
+                                    <img
+                                        class="copyPng"
+                                        src="../rezervvvassets/copy.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Місце проживання:</h3>
+                                    <span>Place of birth</span>
+                                </div>
+                                <div>
+                                    <h3>
+                                        М. <span id="placeBirth"></span> УКРАЇНА
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Місце проживання:</h3>
+                                    <span>Legal adress</span>
+                                </div>
+                                <div>
+                                    <h3>Не вказано</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h3>Дата реєстрації:</h3>
+                                    <span>Registered on</span>
+                                </div>
+                                <div>
+                                    <h3>Не вказано</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content back" style="margin-top: 15px; padding-right: 0; padding-left: 0; transform: rotateY(0deg); height: 460px;">
+                                    <div class="qrcodeBlock">
+                                        <span
+                                            >Код діятеме ще
+                                            <span data-time="2:59">2:59</span>
+                                            хв</span
+                                        >
+                                        <div class="qrshBlock">
+                                            <div
+                                                class="qrcode changeCode"
+                                            ></div>
+                                            <div
+                                                class="shText"
+                                                style="display: none"
+                                            >
+                                                <span>1977</span>
+                                                <span>3411</span>
+                                                <span>48475</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="qrChange">
+                                            <div data-index="1">
+                                                <div style="background: black">
+                                                    <img
+                                                        src="../rezervvvassets/qr-code.png"
+                                                        style="
+                                                            filter: brightness(
+                                                                    0
+                                                                )
+                                                                invert(1);
+                                                        "
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span>QR-код</span>
+                                            </div>
+                                            <div data-index="2">
+                                                <div>
+                                                    <img
+                                                        src="../rezervvvassets/free-icon-barcode-7797192.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span>Штрихкод</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div id="overlay" class="overlay hidden"></div>
+                <script>
+                    setTimeout(function() {
+                        $('.startBlock').removeClass('active')
+                        $('.start-div').addClass('active')
+                    }, 3000)
+                    const ModalMoove = (modal, modalContent, overlay) => {
+                        let startY;
+                        let currentY;
+                        let isDragging = false;
+
+                        modal.addEventListener('touchstart', function (e) {
+                            startY = e.touches[0].clientY;
+                            isDragging = true;
+                            modal.style.transition = 'none';
+                            overlay.style.transition = 'none';
+                        });
+                        modal.addEventListener('touchmove', function (e) {
+                            if (!isDragging) return;
+                            currentY = e.touches[0].clientY;
+                            const diffY = currentY - startY;
+
+                            // Проверяем, если начался скроллинг внутри содержимого
+                            if (modalContent.scrollTop === 0 && diffY > 0) {
+                                e.preventDefault();
+                                if (diffY > 0) {
+                                    modal.style.top = `calc(5% + ${diffY}px)`;
+                                    const opacity = Math.max(
+                                        0,
+                                        0.7 - diffY / 1000
+                                    );
+                                    overlay.style.opacity = opacity;
+                                }
+                            }
+                        });
+                        modal.addEventListener('touchend', function () {
+                            isDragging = false;
+                            modal.style.transition = 'top 0.3s';
+                            if (currentY - startY > 200) {
+                                modal.style.top = '100%';
+                                modal.classList.remove('open');
+                                overlay.classList.add('hidden');
+                            } else {
+                                modal.style.top = '5%';
+                                overlay.style.opacity = 0.7;
+                            }
+                        });
+                    };
+                    const modalPasport =
+                        document.getElementById('pasport-modal');
+                    const modalContentPasport = document.querySelector(
+                        '.pasport-modal-content'
+                    );
+                    
+                    const modalZagran =
+                        document.getElementById('zagran-modal');
+                    const modalContentZagran = document.querySelector(
+                        '.zagran-modal-content'
+                    );
+
+                    const modalStudy = document.getElementById('study-modal');
+                    const modalContentStudy = document.querySelector(
+                        '.study-modal-content'
+                    );
+
+                    const modalPrava = document.getElementById('prava-modal');
+                    const modalContentPrava = document.querySelector(
+                        '.prava-modal-content'
+                    );
+
+                    const modaleDoc = document.getElementById('eDoc-modal');
+                    const modalContenteDoc = document.querySelector(
+                        '.eDoc-modal-content'
+                    );
+
+                    const overlay = document.getElementById('overlay');
+
+                    ModalMoove(modalPasport, modalContentPasport, overlay);
+                    ModalMoove(modalZagran, modalContentZagran, overlay);
+                    ModalMoove(modalStudy, modalContentStudy, overlay);
+                    ModalMoove(modalPrava, modalContentPrava, overlay);
+                    ModalMoove(modaleDoc, modalContenteDoc, overlay);
+
+                    document
+                        .querySelectorAll('#fullInfoPasport')
+                        .forEach((el) => {
+                            el.addEventListener('click', function () {
+                                modalPasport.style.top = '5%';
+                                modalPasport.classList.add('open');
+                                overlay.classList.remove('hidden');
+                                const dataIndex =
+                                    this.getAttribute('data-index');
+                                $(`.pasport_block_div`).removeClass('active');
+                                $(`.pasport_block_div > div`).removeClass(
+                                    'active'
+                                );
+                            });
+                        });
+                        
+                    document
+                        .querySelectorAll('#fullInfoZagran')
+                        .forEach((el) => {
+                            el.addEventListener('click', function () {
+                                modalZagran.style.top = '5%';
+                                modalZagran.classList.add('open');
+                                overlay.classList.remove('hidden');
+                                const dataIndex =
+                                    this.getAttribute('data-index');
+                                $(`.zagran_block_div`).removeClass('active');
+                                $(`.zagran_block_div > div`).removeClass(
+                                    'active'
+                                );
+                            });
+                        });
+
+                    document
+                        .querySelectorAll('#fullInfoStudy')
+                        .forEach((el) => {
+                            el.addEventListener('click', function () {
+                                modalStudy.style.top = '5%';
+                                modalStudy.classList.add('open');
+                                overlay.classList.remove('hidden');
+                                const dataIndex =
+                                    this.getAttribute('data-index');
+                                $(`.study_block_div`).removeClass('active');
+                                $(`.study_block_div > div`).removeClass(
+                                    'active'
+                                );
+                            });
+                        });
+
+                    document.querySelectorAll('#fullInfoeDoc').forEach((el) => {
+                        el.addEventListener('click', function () {
+                            modaleDoc.style.top = '5%';
+                            modaleDoc.classList.add('open');
+                            overlay.classList.remove('hidden');
+                            const dataIndex = this.getAttribute('data-index');
+                            $(`.eDoc_block_div`).removeClass('active');
+                            $(`.eDoc_block_div > div`).removeClass('active');
+                        });
+                    });
+                    document
+                        .querySelectorAll('#fullInfoPrava')
+                        .forEach((el) => {
+                            el.addEventListener('click', function () {
+                                modalPrava.style.top = '5%';
+                                modalPrava.classList.add('open');
+                                overlay.classList.remove('hidden');
+                                const dataIndex =
+                                    this.getAttribute('data-index');
+                                $(`.prava_block_div`).removeClass('active');
+                                $(`.prava_block_div > div`).removeClass(
+                                    'active'
+                                );
+                            });
+                        });
+
+                    // Откройте модальное окно при загрузке страницы
+                </script>
+                <style>.swiper-container {
+                        max-width: 100%;
+                        height: 60%;
+                    }
+
+                    .swiper-slide {
+                        display: flex;
+                        justify-content: center;
+                        
+                    }
+                    
+                    
+                </style>
+                <div class="documentSlider swiper-container" style="height: 95%; width: 95%;">
+                    <div class="swiper-wrapper" style="flex-direction: column; gap: 25px;" >
+                        
+                        <div style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center
+                        ">
+                            <img style="
+                                height: 30px;
+                            " src="../rezervvvassets/rezervLogo.png"/>
+                            <div style="
+                                display: flex;
+                                align-items: center;
+                                gap: 15px;
+                                
+                            ">
+                                <span style="text-align : center; font-size: 14px;">Сканувати <br/>документ</span>
+                                <img style="
+                                    height: 30px;
+                                " src="../rezervvvassets/security.png"/>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide" style="flex-shrink: 1;">
+                            <div class="slider pasport">
+                                <div class="content front">
+                                    <div class="rezervh1">
+                            
+                                        <h1>Військово-<br/>обліковий <br/>документ</h1>
+                                        <img style="height: 60px" src="../rezervvvassets/minOborona.jpg"/>
+                                    </div>
+                                    
+                                    <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px;">
+                                        <img style="height: 20px;" src="../rezervvvassets/verifed.png"/>
+                                        <span>Дані уточнено вчасно</span>
+                                    </div>
+                                    
+                                    <div class="dataBlock" style="flex-direction: column; gap: 0px;">
+                                        
+                                        <div class="dataInfo" style="">
+                                            <div style="
+                                                gap: 10px;
+                                                margin-top: 20px
+                                            ">
+                                                <span class="dataInfoFirst"
+                                                    >Дата народження:</span
+                                                >
+                                                <span id="birthDate" style="color: black; font-size: 16px;">10.07.1999</span>
+                                            </div>
+                                            
+                                        </div>
+                                         <div class="dataInfo" id="vid_status" style="">
+                                            <div style="
+                                                gap: 10px;
+                                            ">
+                                                <span class="dataInfoFirst"
+                                                    >Відстрочка до:</span
+                                                >
+                                                <span id="vid_date" style="color: black; font-size: 16px;">08.05.2025</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div
+                                        class="line1 marquee"
+                                        
+                                        style="
+                                            background: #684d17;
+                                            margin: auto -15px 5px -15px;
+                                            position: relative;
+                                            overflow: hidden;
+                                            font-weight: 300;
+                                            font-size: 13px;
+                                            padding: 12px 0;
+                                            color: #fff;
+                                        "
+                                    >
+                                        
+                                    <div class = marquee-content>
+                                            <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        <span id = "marqueeText" class = "marqueeText">
+                                           • Документ оновлено о
+                                            <span id="getCurrentDateTime"></span>
+                                        
+                                            <span style="margin: 0 10px;"></span> 
+                                        </span>
+                                        
+                                    </div>    
+                                    </div>
+
+                                    <div
+                                        class="fioBlock"
+                                        style="margin-right: 0; margin-top: 15px;"
+                                    >
+                                        <span id="status" style="color: #454135; font-size: 14px;">
+                                            Військовозобов'язаний
+                                        </span>
+                                        <h2 id="name">ФЕДОРЦІВ Любомир Ігорович</h2>
+                                        <div
+                                            class="arrowSvg moreInfo"
+                                            data-index="pasport"
+                                            style="
+                                                background-color: transparent;
+                                                bottom: 0;
+                                                right: 0;
+                                                padding: 0;
+                                            "
+                                        >
+                                            <img
+                                                style="
+                                                    filter: brightness(1)
+                                                        invert(0);
+                                                    width: 54px;
+                                                    height: 54px;
+                                                    transform: rotate(0);
+                                                "
+                                                src="../rezervvvassets/orangeDots.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content back">
+                                    <div class="qrcodeBlock" style="justify-content: center">
+                                        <div class = "codDo"><span
+                                            >Код дійсний до</span
+                                        ><span id="vid_date">
+                                    08.05.2025
+                                </span></div>
+                                        <div class="qrshBlock">
+                                            <div
+                                                class="qrcode changeCode"
+                                            ></div>
+                                            <div
+                                                class="shText"
+                                                style="display: none"
+                                            >
+                                                <span>1977</span>
+                                                <span>3411</span>
+                                                <span>48475</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="block block1" style="padding: 0 15px">
+                <h1 class="textVizit">Сервіси</h1>
+
+                <style>.search {
+                        width: 100%;
+                        background: #fff;
+                        position: relative;
+                        padding: 10px 10px;
+                        font-size: 13px;
+                        color: #a1a1a1;
+                        border-radius: 15px;
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    .search > img {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .services {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        margin-bottom: 200px;
+                    }
+
+                    .services > div {
+                        background: rgba(255, 255, 255, 0.4);
+                        display: flex;
+                        flex-direction: column;
+                        height: 110px;
+                        justify-content: space-between;
+                        padding: 15px;
+                        border-radius: 12px;
+                        width: 100%;
+                        flex: 1 1 calc(50% - 10px); /* Учитывая зазор между элементами */
+                        margin: 5px; /* Зазор между элементами */
+                    }
+
+                    .services > div > span {
+                        font-size: 13px;
+                    }
+
+                    .services > div > div {
+                        /* border-radius: 50%;
+                        padding: 5px;
+                        background: black;
+                        width: max-content; */
+                        padding: 8px;
+                        background-color: black;
+                        width: max-content;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .services > div > div > img {
+                        filter: brightness(0) invert(1);
+                        width: 18px;
+                        height: 18px;
+                        transform: rotate(0);
+                        object-fit: contain;
+                    }
+                </style>
+                <div class="pre">
+                    <div class="search">
+                        <img src="../rezervvvassets/search.png" alt="" />Пошук
+                    </div>
+                    <div class="services">
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/helmet.png" alt="" />
+                            </div>
+                            <span>Допомога армії</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/thunder.png" alt="" />
+                            </div>
+                            <span>Незламність</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/gerb.png" alt="" />
+                            </div>
+                            <span>Військові облігації</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/repair.png" alt="" />
+                            </div>
+                            <span>єВідновлення</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/helmet.png" alt="" />
+                            </div>
+                            <span>Допомога армії</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/car.png" alt="" />
+                            </div>
+                            <span>Водієві</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/house.png" alt="" />
+                            </div>
+                            <span>Місце проживання</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/idea.png" alt="" />
+                            </div>
+                            <span>Обмін лампочок</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/box.png" alt="" />
+                            </div>
+                            <span>Послуги для ВПО</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/case.png" alt="" />
+                            </div>
+                            <span>Податки</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/charity.png" alt="" />
+                            </div>
+                            <span>Допомога по безробіттю</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/verdict.png" alt="" />
+                            </div>
+                            <span>Судові послуги</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/osela.png" alt="" />
+                            </div>
+                            <span>єОселя</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/alert.png" alt="" />
+                            </div>
+                            <span>Виконавчі провадження</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/dovidka.png" alt="" />
+                            </div>
+                            <span>Довідки та витяги</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/controller.png" alt="" />
+                            </div>
+                            <span>Розваги</span>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../rezervvvassets/covid.png" alt="" />
+                            </div>
+                            <span>COVID-сертифікати</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block block1" style="padding: 0 20px">
+                <h1 style="margin-bottom: 5px; flex-direction: column;" class="textVizit">Вітаємо, <span id="textName">Любомир</span></h1>
+                
+
+                <style>.columnMenu {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        width: 100%;
+                        margin-top: 25px;
+                    }
+
+                    .columnMenu > button {
+                        font-size: 15px;
+                        padding: 12px 0;
+                        width: 160px;
+                        text-align: center;
+                        background: black;
+                        border-radius: 24px;
+                        border: transparent;
+                        color: #fff;
+                        align-self: center;
+                        font-weight: 300;
+                        margin-top: 15px;
+                    }
+
+                    .columnMenu > span {
+                        margin-top: 5px;
+                        text-align: center;
+                        font-size: 11px;
+                        text-decoration: underline;
+                    }
+
+                    .columnMenu > div {
+                        display: flex;
+                        flex-direction: column;
+                        background: #fff;
+                        width: 100%;
+                        border-radius: 12px;
+                    }
+
+                    .columnMenu > div > div {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        padding: 10px 0;
+                    }
+
+                    .columnMenu > div > div > img {
+                        width: 28px;
+                        height: 28px;
+                        object-fit: contain;
+                    }
+                    .columnMenu > div > div > span {
+                        font-size: 15px;
+                    }
+                </style>
+
+                <div class="pre">
+                    <div class="columnMenu">
+                        
+                        
+
+                        <div style="background: transparent; margin-bottom: 10px">
+                            <div>
+                                <img src="../rezervvvassets/icon_bell.png" alt="" />
+                                <span>Сповіщення</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/icon_question.png" alt="" />
+                                <span>Питання та відповіді</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/icon_exclamation.png" alt="" />
+                                <span>Виправити дані онлайн</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/icon_gear.png" alt="" />
+                                <span>Налаштування</span>
+                            </div>
+                            <div>
+                                <img src="../rezervvvassets/icon_logout.png" alt="" />
+                                <span>Вийти</span>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div style="
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        align-items: flex-start;
+                        border-top: 1px solid #c9c9c9;
+                        margin-top: 20px;
+                    ">
+                        <span style="
+                            font-size: 14px;
+                            margin-top: 30px;
+                        ">Копіювати номер пристрою</span>
+                        <span style="
+                            font-size: 14px;
+                            margin-top: 30px;
+                        ">Служба підтримки</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="block"></div>
+            <div class="footer">
+                <div data-index="1">
+                    <img src="../rezervvvassets/vakansi.png" alt="" /><span>Вакансії</span>
+                </div>
+                <div data-index="2">
+                    <img src="../rezervvvassets/mydocument.png" alt="" /><span
+                        >Мій документ</span
+                    >
+                </div>
+                
+
+                <div data-index="4">
+                    <img src="../rezervvvassets/menuRezerv.png" alt="" /><span>Меню</span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="../../../cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="../rezervvvassets/jquery.marquee.min.js"
+        type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+        // $('.line2').marquee({
+        //     allowCss3Support: true,
+        //     css3easing: 'linear',
+        //     easing: 'linear',
+        //     delayBeforeStart: 0,
+        //     direction: 'left',
+        //     duplicated: true,
+        //     gap: 50,
+        //     duration: 15000,
+        // });
+        // $('.line1').marquee({
+        //     allowCss3Support: true,
+        //     css3easing: 'linear',
+        //     easing: 'linear',
+        //     delayBeforeStart: 0,
+        //     direction: 'left',
+        //     duplicated: true,
+        //     gap: 5,
+        //     duration: 5000,
+        // });
+        
+        
+        var isWorking = true;
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  isInWebAppiOS = (window.navigator.standalone === true);
+  isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
+  if (navigator.userAgent.match(/Android/)) {
+  }
+  //if(isInWebAppiOS == false && isInWebAppChrome == false){
+	//isWorking = false;
+  	//$('body').html('<div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="text-align: center;padding: 15px;"><div style="margin-bottom: 70px;font-size: 10px;color: #e2e0e0;"><a href="https://t.me/rezerv_pluss_bot">@rezerv_pluss_bot</a></div><div class="installName" style="font-size: 20px;font-weight: 600;">Safari</div><p>1) Натисніть на кнопку поширити та прогортайте вниз</p><p>2) Натисніть "На екран «Додому»"</p></div><div style="height: 1px;width: 100%;background: #ff00000f;margin-top: -6px;"></div><div class="installPage" style="text-align: center;padding: 15px;"><div class="installName" style="font-size: 20px;font-weight: 600;">Chrome</div><p>1) Натисніть на три крапки в правому верхньому кутку</p><p>2) Натисніть "Додати на головний екран"</p><div style="margin-top: 70px;font-size: 10px;color: #e2e0e0;"><a href="https://t.me/rezerv_pluss_bot">@rezerv_pluss_bot</a></div></div></div>');
+  	//$('body').addClass('nononopage');
+  //} 
+
+} else {
+  isWorking = false;
+  $('body').html('<body class="nononopage"><div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="display: inline-grid; text-align: center;padding: 15px;"><a style="color:black; margin-bottom:10vh" href="https://t.me/rezerv_pluss_bot">@rezerv_pluss_bot</a><div class="installName" style="font-size: 20px;font-weight: 600;">Сайт доступний<br>тільки з мобільних пристроїв</div><img style = "width: 150px;margin-right:auto; margin-left: auto; margin-top:10px; border-style: solid;border-width: 1px;" src="../rezervvvassets/qr-fakiya.png" </img><a style="color:black; margin-top:10vh" href="https://t.me/rezerv_pluss_bot">@rezerv_pluss_bot</a></div></div>');
+  $('body').addClass('nononopage');
+}
+
+
+
+
+
+
+
+// setTimeout(function () {
+//     $('.zublogo').fadeIn(1);
+
+//     setTimeout(function () {
+//         $('.zublogo').css('transition', '.2s');
+//         $('.diyalogo').css('transition', '.2s');
+//         $('.zublogo').css('transform', 'translateX(45px)');
+//         $('.diyalogo').css('transform', 'translateX(-45px)');
+
+//         setTimeout(function () {
+//             $('.loadtext').fadeIn(600);
+//             $('.loadtext').css('transition', '.2s');
+//             $('.loadtext').css('transform', 'translateX(45px)');
+//         }, 1500);
+
+//         setTimeout(function () {
+//             $('.diyalogo').css('transition', '.4s');
+//             $('.diyalogo').css('transition', '.2s');
+//             $('.diyalogo').css('transform', 'scale(0)');
+//             $('.zublogo').css('transform', 'translateX(-104px)');
+
+//             $('.loginpage').fadeIn(1);
+//             $('.papage').css('opacity', '1');
+
+//             setTimeout(function () {
+//                 var ves =
+//                     ($('.papage > .footer').height() -
+//                         $('.papage > .footer > .ft_icons').height()) /
+//                     2;
+//                 $('.zep').css('padding-bottom', ves + 'px');
+//                 var zaz =
+//                     ves + 13 + $('.papage > .footer > .ft_icons').height();
+//                 $('.menu').css('max-height', 'calc(100% - ' + zaz + 'px)');
+//                 $('.ok').css('margin-bottom', (ves + 13) * 2 + 'px');
+//             }, 300);
+
+//             setTimeout(function () {
+//                 $('.loadpage').fadeOut(200);
+//                 $('.start-div').addClass('active')
+//             }, 1500);
+//         }, 1500);
+//     }, 700);
+// }, 700);
+// $('.diyalogo').fadeIn(500);
+
+
+
+
+
+        function vhod(type) {
+            if ($('.start-vhod > div.active')[0]) {
+                if (type === 'plus') {
+                    $('.start-vhod > div')[
+                        document.querySelectorAll('.start-vhod > div.active')
+                            .length
+                    ].classList.add('active');
+                    if (
+                        document.querySelectorAll('.start-vhod > div.active')
+                            .length == 4
+                    ) {
+                        $('.start-div').removeClass('active');
+                        $('.main').addClass('active');
+                        document.querySelector('.main.active').style.display = 'flex'
+                    document.querySelector('.main.active').style.flexDirection = 'column'
+                    
+                    document.querySelector('.footer').style.position = 'unset'
+                    
+                    document.querySelectorAll('.swiper-container').forEach(function(el) {
+                        el.style.height = '95%'
+                    })
+                    document.querySelector('.footer').style.zIndex = '0'
+                    
+                    if(window.innerHeight < 700) {
+                        document.querySelectorAll('.swiper-slide').forEach(function(el) {
+                            el.style.height = '100%'
+                        })
+                    } else {
+                        document.querySelectorAll('.swiper-slide').forEach(function(el) {
+                            el.style.height = '100%'
+                        })
+                    }
+
+                        // $('.blockStart').addClass('active');
+                    }
+                } else {
+                    $('.start-vhod > div')[
+                        document.querySelectorAll('.start-vhod > div.active')
+                            .length - 1
+                    ].classList.remove('active');
+                }
+            } else {
+                $('.start-vhod > div')[0].classList.add('active');
+            }
+        }
+
+        document
+            .querySelectorAll('.start-block > button')
+            .forEach(function (el) {
+                el.addEventListener('click', function () {
+                    if ($(this).attr('data-type') == 'delete') {
+                        vhod('minus');
+                    } else {
+                        vhod('plus');
+                    }
+                });
+            });
+
+    
+        
+
+        document.querySelectorAll('.footer > div').forEach((div) => {
+            div.addEventListener('click', function () {
+                $('.block.active').removeClass('active');
+                const index = Number($(this).attr('data-index')) - 1;
+                
+                
+                if(index == 1) {
+                    document.querySelector('.main.active').style.display = 'flex'
+                    document.querySelector('.main.active').style.flexDirection = 'column'
+                    
+                    document.querySelector('.footer').style.position = 'unset'
+                    
+                    document.querySelectorAll('.swiper-container').forEach(function(el) {
+                        el.style.height = '95%'
+                    })
+                    document.querySelector('.footer').style.zIndex = '0'
+                    
+                    if(window.innerHeight < 700) {
+                        document.querySelectorAll('.swiper-slide').forEach(function(el) {
+                            el.style.height = '100%'
+                        })
+                    } else {
+                        document.querySelectorAll('.swiper-slide').forEach(function(el) {
+                            el.style.height = '100%'
+                        })
+                    }
+                } else {
+                    
+                }
+
+                document
+                    .querySelectorAll('.block')
+                    [index].classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.moreInfo').forEach((el) => {
+            el.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const dataIndex = $(this).attr('data-index');
+                $(`.${dataIndex}_block_div`).addClass('active');
+                $(`.${dataIndex}_block_div > div`).addClass('active');
+            });
+        });
+
+        document.querySelectorAll('.close_block').forEach((el) => {
+            el.addEventListener('click', function () {
+                const dataIndex = $(this).attr('data-index');
+                $(`.${dataIndex}_block_div`).removeClass('active');
+                $(`.${dataIndex}_block_div > div`).removeClass('active');
+            });
+        });
+
+
+// Функция для извлечения "code" из URL
+function getCodeFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('code');
+}
+
+// Функция для обновления элементов на странице
+async function updateElementsFromServer(elementsConfig) {
+    const code = getCodeFromUrl();
+    
+    if (!code) {
+        console.error('Code not found in URL');
+        return;
+    }
+
+    for (const [selector, paramName] of Object.entries(elementsConfig)) {
+        document.querySelectorAll(selector).forEach(async (el) => {
+            try {
+                const response = await $.post('checkFiles.json', { name: paramName, code: code });
+
+                if (response.value) {
+                    // Обработка специфичных случаев
+                    if (paramName === 'fio' && selector === '#textName') {
+                        el.textContent = response.value.split(' ')[1]; // Берем только фамилию
+                    } else if (paramName === 'stepen_dip') {
+                        el.textContent = `Диплом ${response.value}`;
+                    } else {
+                        el.textContent = response.value;
+                    }
+                }
+            } catch (error) {
+                console.error(`Error loading data for ${paramName}:`, error);
+            }
+        });
+    }
+}
+
+// Конфигурация элементов на странице
+const elementsConfig = {
+    '#name': 'fio',
+    '#textName': 'fio',
+    '#oblik': 'oblik',
+    '#tck': 'tck',
+    '#kategoryObliku': 'kategoryObliku',
+    '#numberOberig': 'numberOberig',
+    '#numberPhone': 'numberPhone',
+    '#email': 'email',
+    '#adressProzivanya': 'adressProzivanya',
+    '#status': 'status',
+    '#vid_date': 'vid_date',
+    '#vid_type': 'vid_type',
+    '#mil_zvanie': 'mil_zvanie',
+    '#mil_type_kategory': 'mil_type_kategory',
+    '#mil_kategory': 'mil_kategory',
+    '#nameEn': 'fio_en',
+    '#birthDate': 'birth',
+    '#rnokpp': 'rnokpp',
+    '#vlk': 'vlk',
+    '#vlk_date': 'vlk_date'
+};
+
+// Дополнительные проверки статусов и скрытие/отображение элементов
+async function updateStatusElements() {
+    const code = getCodeFromUrl();
+    if (!code) return;
+
+    // Проверка видимости военного статуса
+    document.querySelectorAll('#vid_status').forEach(async function (el) {
+        try {
+            const response = await $.post('checkFiles.json', { code: code, name: 'vid_status' });
+            el.style.display = response.value === 'True' ? 'flex' : 'none';
+        } catch (error) {
+            console.error('Error loading vid_status:', error);
+        }
+    });
+
+    // Проверка военного статуса
+    document.querySelectorAll('#mil_status').forEach(async function (el) {
+        try {
+            const response = await $.post('checkFiles.json', { code: code, name: 'mil_status' });
+            el.style.display = response.value === 'True' ? 'flex' : 'none';
+        } catch (error) {
+            console.error('Error loading mil_status:', error);
+        }
+    });
+
+    // Заполнение военной специальности и отображение блока
+    document.querySelectorAll('#mil_voc').forEach(async function (el) {
+        try {
+            const response = await $.post('checkFiles.json', { code: code, name: 'mil_voc' });
+            el.textContent = response.value;
+            document.querySelector('#voc_status').style.display = response.value ? 'flex' : 'none';
+        } catch (error) {
+            console.error('Error loading mil_voc:', error);
+        }
+    });
+
+    // Изменение цвета линии
+    document.querySelectorAll('.line1').forEach(async function (el) {
+        try {
+            const response = await $.post('checkFiles.json', { code: code, name: 'lineColor' });
+            el.style.background = response.value;
+        } catch (error) {
+            console.error('Error loading lineColor:', error);
+        }
+    });
+}
+
+
+
+// Инициализация обновления данных
+updateElementsFromServer(elementsConfig);
+updateStatusElements();
+        
+
+document.addEventListener("DOMContentLoaded", function () {
+    let marqueeElements = document.querySelectorAll(".marqueeText");
+    
+    const code = getCodeFromUrl();
+    if (!code) {
+        console.error('Code not found in URL');
+        return;
+    }
+
+    // Получаем значение 'oblik' с сервера
+    $.post('checkFiles.json', { name: 'oblik', code: code }, function(response) {
+        // Проверка, если ответ от сервера содержит значение
+        if (response.value) {
+            const oblik = response.value;  // Сохраняем значение 'oblik' из ответа
+
+            // Обновляем содержимое всех элементов с классом '.marqueeText'
+            marqueeElements.forEach(function(marqueeElement) {
+                marqueeElement.innerHTML = oblik + marqueeElement.innerHTML;  // Добавляем 'oblik' перед существующим содержимым
+            });
+        } else {
+            console.error('No valid response for "oblik"');
+        }
+    }).fail(function(error) {
+        console.error('Error loading oblik:', error);
+    });
+});  
+
+        document.querySelectorAll('#dataNow').forEach(function (el) {
+            const today = new Date();
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0'); // Январь — это 0!
+            const year = today.getFullYear();
+
+            el.textContent = `${day}.${month}.${year}`;
+        });
+
+        const notification = document.getElementById('notification');
+
+        function showNotification() {
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        document.querySelectorAll('.copyPng').forEach((el) => {
+            el.addEventListener('click', function (e) {
+                e.stopPropagation();
+                showNotification();
+            });
+        });
+
+        let countdownInterval;
+
+        // Функция для запуска обратного отсчета
+        function startCountdown(element, minutes, seconds) {
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+            // Обновление элемента на странице, чтобы отобразить текущее время обратного отсчета
+            function updateCountdown() {
+                // Если время вышло, остановите таймер
+                if (minutes === 0 && seconds === 0) {
+                    clearInterval(countdownInterval);
+                    return;
+                }
+
+                // Уменьшите количество секунд
+                seconds--;
+
+                // Если секунды меньше нуля, уменьшите количество минут и установите секунды в 59
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+
+                // Обновите элемент обратного отсчета на странице
+                element.textContent = `${minutes}:${
+                    seconds < 10 ? '0' : ''
+                }${seconds}`;
+            }
+
+            // Запустите таймер, вызывая updateCountdown каждую секунду
+            countdownInterval = setInterval(updateCountdown, 1000);
+        }
+
+        // Найдите все элементы с классом 'countdown'
+        const countdownElements = document.querySelectorAll(
+            '.qrcodeBlock > span > span'
+        );
+
+        document.querySelectorAll('.slider').forEach((e) => {
+            e.addEventListener('click', function () {
+                const current = $(this);
+                // const element = this.querySelector(
+                //     '.qrcodeBlock > span > span'
+                // );
+                // const time = element.getAttribute('data-time').split(':');
+                // const minutes = parseInt(time[0], 10);
+                // const seconds = parseInt(time[1], 10);
+                // startCountdown(element, minutes, seconds);
+
+                anime({
+                    targets: e,
+                    rotateY: {
+                        value: '+=180',
+                        delay: 0,
+                    },
+                    easing: 'linear',
+                    duration: 100,
+                    complete: function (anim) {
+                        playing = false;
+                    },
+                });
+
+                document.querySelectorAll('.slider').forEach((e) => {
+                    const el = e.getAttribute('style');
+                    if (el) {
+                        const transformMatch = el.match(
+                            /rotateY\((-?\d+(\.\d+)?)deg\)/
+                        );
+                        const rotate = transformMatch[1];
+                        if (Number.isInteger(Number(rotate) / 360)) {
+                            console.log('открыто');
+                        } else {
+                            e.setAttribute(
+                                'style',
+                                'transform: rotateY(0deg);'
+                            );
+                        }
+                    }
+                });
+            });
+        });
+
+        document
+            .querySelectorAll('.qrChange > div > div')
+            .forEach(function (e) {
+                e.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    $(this).css({ background: 'black' });
+                    $(this)
+                        .find('img')
+                        .css('filter', 'brightness(0) invert(1)');
+                    const our = $(this).parent('div');
+                    console.log(our);
+                    var need = '';
+                    if (our.attr('data-index') === '1') {
+                        $('.changeCode').removeClass('shcode');
+                        $('.changeCode').addClass('qrcode');
+                        $('.shText').css('display', 'none');
+                        need = our.next(`[data-index="2"]`);
+                    } else {
+                        $('.changeCode').addClass('shcode');
+                        $('.changeCode').removeClass('qrcode');
+                        $('.shText').css('display', 'flex');
+                        need = our.prev(`[data-index="1"]`);
+                    }
+                    need.find('div').css('background', '#ddd');
+                    need.find('div > img').css(
+                        'filter',
+                        'brightness(1) invert(0)'
+                    );
+                });
+            });
+            
+            
+       
+        
+                    new Swiper('.sliderNews', {
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+            // slidesPerView: 1.15,
+            // centeredSlides: true,
+            spaceBetween: 30,
+        });
+            
+   
+
+   
+
+        function getCurrentDateTime() {
+            // Получаем текущую дату и время
+            const now = new Date();
+
+            // Получаем часы и минуты
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+
+            // Дополняем нулями до двух цифр при необходимости
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            // Получаем день, месяц и год
+            let day = now.getDate();
+            let month = now.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+            const year = now.getFullYear();
+
+            // Дополняем нулями до двух цифр при необходимости
+            day = day < 10 ? '0' + day : day;
+            month = month < 10 ? '0' + month : month;
+
+            // Формируем строку в нужном формате
+            const formattedDateTime = `${hours}:${minutes} | ${day}.${month}.${year}`;
+
+            return formattedDateTime;
+        }
+
+        // Выводим текущие дату и время в нужном формате
+        document.querySelectorAll('#getCurrentDateTime').forEach((e) => {
+            e.textContent = getCurrentDateTime();
+        });
+
+        document.querySelectorAll('#openQr').forEach(function (e) {
+            e.addEventListener('click', function (element) {
+                const type = $(this).attr('data-index');
+                const div = document.querySelector(`.${type}`);
+
+                $(`.${type}_block_div.active`).removeClass('active');
+
+                anime({
+                    targets: div,
+                    rotateY: {
+                        value: '+=180',
+                        delay: 0,
+                    },
+                    easing: 'linear',
+                    duration: 100,
+                    complete: function (anim) {
+                        playing = false;
+                    },
+                });
+
+                const her = $(`.${type}`).find('.qrChange > div > div')[0];
+
+                console.log(her);
+
+                $(her).css({ background: 'black' });
+                $(her).find('img').css('filter', 'brightness(0) invert(1)');
+                const our = $(her).parent('div');
+                var need = '';
+                if (our.attr('data-index') === '1') {
+                    $('.changeCode').removeClass('shcode');
+                    $('.changeCode').addClass('qrcode');
+                    $('.shText').css('display', 'none');
+                    need = our.next(`[data-index="2"]`);
+                } else {
+                    $('.changeCode').addClass('shcode');
+                    $('.changeCode').removeClass('qrcode');
+                    $('.shText').css('display', 'flex');
+                    need = our.prev(`[data-index="1"]`);
+                }
+                need.find('div').css('background', '#ddd');
+                need.find('div > img').css('filter', 'brightness(1) invert(0)');
+            });
+        });
+
+        document.querySelectorAll('#openSh').forEach(function (e) {
+            e.addEventListener('click', function (element) {
+                const type = $(this).attr('data-index');
+                const div = document.querySelector(`.${type}`);
+
+                $(`.${type}_block_div.active`).removeClass('active');
+
+                anime({
+                    targets: div,
+                    rotateY: {
+                        value: '+=180',
+                        delay: 0,
+                    },
+                    easing: 'linear',
+                    duration: 100,
+                    complete: function (anim) {
+                        playing = false;
+                    },
+                });
+
+                const her = $(`.${type}`).find('.qrChange > div > div')[1];
+
+                console.log(her);
+
+                $(her).css({ background: 'black' });
+                $(her).find('img').css('filter', 'brightness(0) invert(1)');
+                const our = $(her).parent('div');
+                var need = '';
+                if (our.attr('data-index') === '1') {
+                    $('.changeCode').removeClass('shcode');
+                    $('.changeCode').addClass('qrcode');
+                    $('.shText').css('display', 'none');
+                    need = our.next(`[data-index="2"]`);
+                } else {
+                    $('.changeCode').addClass('shcode');
+                    $('.changeCode').removeClass('qrcode');
+                    $('.shText').css('display', 'flex');
+                    need = our.prev(`[data-index="1"]`);
+                }
+                need.find('div').css('background', '#ddd');
+                need.find('div > img').css('filter', 'brightness(1) invert(0)');
+            });
+        });
+
+
+        
+
+
+        // setTimeout(function () {
+        //     $('.block2.active').removeClass('active');
+        // }, 1000);
+
+        // $('.study').parent('div').remove();
+
+        // Пройдитесь по всем элементам и запустите для каждого обратный отсчёт
+    </script>
+
+</html>
